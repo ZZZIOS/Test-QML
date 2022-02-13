@@ -20,8 +20,6 @@ Window {
         height: 200
 
         Text{
-            x: 200
-            y: 100
             id: buttonLabel
             anchors.centerIn: parent
             text: "click me"
@@ -30,8 +28,7 @@ Window {
         MouseArea{
 
                  id: buttonMouseArea
-                 anchors.fill: parent //прикрепим все стороны области мыши к якорям прямоугольника
-                         //onClicked обработает корректные щелчки кнопки мыши
+                 anchors.fill: parent
                  acceptedButtons: Qt.LeftButton | Qt.RightButton
 
                  onClicked: {
